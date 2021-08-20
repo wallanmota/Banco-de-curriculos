@@ -1,17 +1,66 @@
-    body {
+     * {
       margin: 0;
       padding: 0;
     }
+
+    body{
+        font-family: "Lucinda Grande", "Lucinda Sans Unicode", Arial, sans-serif;
+    }
+
+    h1{
+        color: #fff;
+    }
+
+    p{
+        color: #fff;
+    }
+
+    span{
+        color: #af670a;
+    }
+
+    p.textoHome{
+        color: #fff;
+        font-size: 1.5em;
+        padding: 30px 10px;
+    }
+
+    .container{
+        width: 80vw;
+        height: 85vh;
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+
+    #logo{
+        font-size: 3em;
+        padding: 50px 10px;
+        
+    }
+
+    .imgEmprego{
+        width: 400px;
+        height: 200px;
+        margin: 0 auto;
+        padding: 5px;
+        background: url(../img/emp2.png)no-repeat ;
+        background-size: cover;
+        background-position: center;
+        border-radius: 50px;
+
+    }
+
     .secao {
       position: relative;
     }
     #secao-01 {
-      background-color: #0B77C5;
+      background: #252217;
     }
     #secao-02 {
       background-color: #fff;
     }
- 
+
     .icone-scroll {
       position: absolute;
       bottom: 3em;
