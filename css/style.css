@@ -9,6 +9,12 @@
 
     h1{
         color: #fff;
+        font-size: 1.75em;
+    }
+
+    h2{
+        color: #af670a;
+        margin-top: 50px;
     }
 
     p{
@@ -39,16 +45,15 @@
         
     }
 
-    .imgEmprego{
-        width: 400px;
-        height: 200px;
+    #imagem{
+        width: 50%;
         margin: 0 auto;
-        padding: 5px;
-        background: url(../img/emp2.png)no-repeat ;
-        background-size: cover;
-        background-position: center;
-        border-radius: 50px;
+    }
 
+    img.img-emprego{
+        width: 100%;
+        max-width: 400px;
+        border-radius: 20px;
     }
 
     .secao {
@@ -58,12 +63,12 @@
       background: #252217;
     }
     #secao-02 {
-      background-color: #fff;
+      background-color: #cdc8b1;
     }
 
     .icone-scroll {
       position: absolute;
-      bottom: 3em;
+      bottom: 1em;
       width: 50px;
       height: 50px;
       background-color: #1a1a1a;
@@ -91,4 +96,118 @@
     .scroll-top + .scroll-top {
       top: -15px;
       margin-top: 0;
+    }
+    
+    /* Pagina 2 - Form
+    ******************************/
+
+    form{
+        width: 100%;
+        /* display: flex; */
+        align-items: center;
+        justify-content: center;
+    
+    }
+        
+    label{
+        display: block;
+    }
+    
+    #containerPai{
+        height: 80vh;
+    }
+
+    #container {
+        display: flex;
+        align-items: center; 
+        flex-direction: column;
+    }
+    
+    .bloco {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    }
+    
+    .preenchimentoObrigatorio{
+        color: red;
+    }
+    
+    #DataNascimento select{
+        padding: 0px 5px;
+    }
+    #cep, #telefone, #celular,
+    #identidade, #cpf{
+        width: 7.5rem;    
+    }
+    
+    #nome, #endereco, #email {
+    width: 18.75rem;
+    }
+    
+    #categoriasHabilitacao {
+        width: 5.625rem;
+    }
+    
+    #numResidencia {
+        width: 5rem;
+    }
+    
+    #container button {
+        width: 10rem;
+        padding: 5px;
+        margin: 20px auto;
+        background: #af670a;
+        color: #fff;
+    }
+    
+    #container button:hover{
+        background-position: left bottom;
+    }
+
+
+    @media only screen and (max-width: 820px) {
+        
+       .bloco {
+            width: 90%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+        }
+
+        .icone-scroll{
+            display: none;
+        } */
+
+        .scroll-top{
+            display: none;
+        } 
+
+
+        .scroll{
+            display: none;
+        }
+    
+    }
+    
+    @media only screen and (max-width: 480px) {
+    
+
+        #container {
+            align-items: center;
+        }
+    
+        .container h1 {
+            font-size: 1em;
+            
+        }
+
+        h2{
+            padding: 0;
+            margin: 0;
+        }
+        .bloco {
+            width: 95%;
+            flex-wrap: wrap;
+        }
     }

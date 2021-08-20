@@ -9,10 +9,10 @@
       var body = $('html, body');
       if($(this).parent('.secao').is('#secao-01')) {
         //verifica se está na primeira seção e rola para a segunda
-        body.animate({scrollTop: _AlturaDocumento}, '500');
+        body.animate({scrollTop: _AlturaDocumento},'auto');
       } else {
         //rola para o início da página
-        body.animate({scrollTop: 0}, '800');
+        body.animate({scrollTop: 0}, 'auto');
       }
     }
 
