@@ -128,6 +128,10 @@
     display: flex;
     justify-content: space-between;
     }
+
+    #erro{
+        color: red;
+    }
     
     .preenchimentoObrigatorio{
         color: red;

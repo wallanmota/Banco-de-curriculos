@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>.:JobsNET:.</title>
   </head>
-  <body>
+  <body onload="AlturaSecao()">
     <div id="secao-01" class="secao">
       <div class="container">
         <div id=logo>
@@ -126,7 +126,8 @@
                 </div>
                 <div>
                     <label>CPF *</label>
-                    <input type="number" maxlength="11" id="cpf" required>
+                    <input type="text" maxlength="11" id="cpf_digitado" onChange="validacao()" required>
+                    <span style="display: none;" id="erro">CPF Inválido</span>
                 </div>
                 <div>
                     <label for="veiculo">Possui Veículo</label>
@@ -144,7 +145,7 @@
                     </select>
                 </div>
             </div>
-            <div><button type="submit" id="enviar" onclick="">ENVIAR</button></div>
+            <div><button type="submit" id="enviar" >ENVIAR</button></div>
         </form>
     </div> 
 
