@@ -102,8 +102,8 @@
     ******************************/
 
     form{
-        width: 100%;
-        /* display: flex; */
+        width: 100vw;
+        display: flex;
         align-items: center;
         justify-content: center;
     
@@ -114,7 +114,8 @@
     }
     
     #containerPai{
-        height: 80vh;
+        width: 90vw;
+        height: 90vh;
     }
 
     #container {
@@ -124,22 +125,16 @@
     }
     
     .bloco {
-    width: 45%;
+    width: 60vw;
     display: flex;
-    justify-content: space-between;
+    margin: 5px;
+    justify-content:space-between
     }
 
     #erro{
         color: red;
     }
     
-    .preenchimentoObrigatorio{
-        color: red;
-    }
-    
-    #DataNascimento select{
-        padding: 0px 5px;
-    }
     #cep, #telefone, #celular,
     #identidade, #cpf{
         width: 7.5rem;    
@@ -149,8 +144,8 @@
     width: 18.75rem;
     }
     
-    #categoriasHabilitacao {
-        width: 5.625rem;
+    #categoriasHabilitacao{
+        width: 6em;
     }
     
     #numResidencia {
