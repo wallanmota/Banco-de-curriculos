@@ -36,22 +36,22 @@
             <h2>Preencha o formulário abaixo!</h2>
         
             <div class="bloco">
-                <div>
+                <fieldset>
                     <label>Nome Completo * </label>
                     <input type="text" id="nome" placeholder="Digite seu nome completo" required/>
-                </div>
-                <div>
+                </fieldset>
+                <fieldset>
                     <label>Cargo Pretendido</label>
                     <input id="cargo" type="text" />
-                </div>
+                </fieldset>
             </div>
             <div class="bloco">
-                <div id="dataNascimento">
+                <fieldset id="dataNascimento">
                     <label for="DataNascimento">Data de Nascimento *</label>
                     <input type="date" required>
-                </div>
+                </fieldset>
 
-                <div>
+                <fieldset>
                     <label for="estadoCivil">Estado Civil</label>
                     <select id="estadoCivil">
                         <option value="Selecionar">Selecionar</option>
@@ -60,8 +60,8 @@
                         <option value="Divorciado(a)">Divorciado(a)</option>
                         <option value="Viúvo(a)">Viúvo(a)</option>
                     </select>
-                </div>
-                <div>
+                </fieldset>
+                <fieldset>
                     <label for="genero">Gênero</label>
                     <select name="genero" id="genero">
                         <option value="">Selecionar</option>
@@ -70,71 +70,71 @@
                         <option value="Outro">Outro</option>
                         <option value="Prefiro não informar">Prefiro não informar</option>
                     </select>
-                </div>
+                </fieldset>
             </div>
         
             <div class="bloco">
-                <div>
+                <fieldset>
                     <label>CEP *</label>
                     <input id="cep" maxlength="8" type="number" required>
-                </div>
-                <div>
+                </fieldset>
+                <fieldset>
                     <label>Endereço</label>
                     <input type="text" id="endereco">
-                </div>
-                <div>
+                </fieldset>
+                <fieldset>
                     <label for="numResidencia">Número </label>
                     <input type="text" id="numResidencia" required>
-                </div>
+                </fieldset>
             </div>
         
             <div class="bloco">
-                <div>
+                <fieldset>
                     <label>Bairro</label>
                     <input type="text" id="bairro">
-                </div>
-                <div>
+                </fieldset>
+                <fieldset>
                     <label>Cidade</label id="cidade">
                     <input type="text">
-                </div>
-                <div>
+                </fieldset>
+                <fieldset>
                     <label for="complemento">Complemento</label>
                     <input type="text" id="complemento">
-                </div>
+                </fieldset>
             </div>
         
             <div class="bloco">
-                <div>
+                <fieldset>
                     <label>Telefone Fixo</label>
                     <input placeholder="Apenas números" maxlength="10" id="telefone" type="text">
-                </div>
-                <div>
+                </fieldset>
+                <fieldset>
                     <label>Celular</label>
                     <input placeholder="Apenas números" maxlength="11" id="celular" type=text> 
-                </div>
-                <div>
+                </fieldset>
+                <fieldset>
                     <label for="email">Email *</label>
                     <input type="email" id="email" required>
-                </div>
+                </fieldset>
             </div>
         
             <h2>Documentos</h2>
             <div class="bloco">
-                <div>
+                <fieldset>
                     <label>Identidade *</label>
                     <input type="number" id="identidade" required>
-                </div>
-                <div>
+                </fieldset>
+                <fieldset>
                     <label>CPF *</label>
                     <input type="text" maxlength="11" id="cpf_digitado" onChange="validacao()" required>
                     <span style="display: none;" id="erro">CPF Inválido</span>
-                </div>
-                <div>
+                </fieldset>
+                <fieldset>
                     <label for="veiculo">Possui Veículo</label>
                     <input type="radio" name="veiculo" value="S"> Sim 
                     <input type="radio" name="veiculo" value="N"> Não 
-                </div>
-                <div>
+                </fieldset>
+                <fieldset>
                     <label for="categoriaHabilitacao">Habilitação</label>
                     <select id="categoriasHabilitacao">
                         <option value=" "></option>
@@ -143,9 +143,9 @@
                         <option value="B">B</option>
                         <option value="AB">AB</option>
                     </select>
-                </div>
+                </fieldset>
             </div>
-            <div><button type="submit" id="enviar" >ENVIAR</button></div>
+            <fieldset><button type="submit" id="enviar" >ENVIAR</button></fieldset>
         </form>
     </div> 
 

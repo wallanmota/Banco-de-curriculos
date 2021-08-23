@@ -108,6 +108,10 @@
         justify-content: center;
     
     }
+
+    fieldset{
+        border: none;
+    }
         
     label{
         display: block;
@@ -176,7 +180,7 @@
 
         .icone-scroll{
             display: none;
-        } */
+        } 
 
         .scroll-top{
             display: none;
