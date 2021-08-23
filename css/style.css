@@ -7,6 +7,10 @@
         font-family: "Lucinda Grande", "Lucinda Sans Unicode", Arial, sans-serif;
     }
 
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
     h1{
         color: #fff;
         font-size: 1.75em;
