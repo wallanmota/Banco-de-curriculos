@@ -71,7 +71,6 @@ function validaCPF(cpf){
 
 function validacao(){
     console.log("iniciando validação")
-    document.getElementById("erro").style.display = "none"
 
     let cpf = document.getElementById("cpf_digitado").value;
     let resultadoValidacao = validaCPF(cpf);
@@ -80,7 +79,8 @@ function validacao(){
         console.log('cpf OK');
     }
     else{
-        document.getElementById("erro").style.display = "block";
+        alert('CPF Inválido')
+        document.getElementById('cpf_digitado').value=("");
     }
 }
 
