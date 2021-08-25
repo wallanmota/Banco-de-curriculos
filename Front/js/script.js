@@ -89,6 +89,7 @@ function validacao(){
 
 function limpa_formulário_cep() {
     //Limpa valores do formulário de cep.
+    document.getElementById('cep').value=("");
     document.getElementById('endereco').value=("");
     document.getElementById('bairro').value=("");
     document.getElementById('cidade').value=("");
