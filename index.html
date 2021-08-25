@@ -2,7 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="front/css/style.css">
+    <link rel="stylesheet" type="text/css" href="Front/css/style.css">
     <title>.:JobsNET:.</title>
   </head>
   <body onload="AlturaSecao()">
@@ -13,7 +13,7 @@
         </div>
 
         <div id="imagem">
-            <img class="img-emprego" src="front/img/emp2.png">
+            <img class="img-emprego" src="Front/img/emp2.png">
         </div>
 
         <div class=conteudo>
@@ -76,11 +76,12 @@
             <div class="bloco">
                 <fieldset>
                     <label>CEP *</label>
-                    <input id="cep" value="" size="10" maxlength="9" type="text" onBlur="pesquisacep(this.value)" required>
+                    <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                    onchange="pesquisacep(this.value);" required />
                 </fieldset>
                 <fieldset>
                     <label>Endereço</label>
-                    <input type="text" id="endereco">
+                    <input type="text" id="endereco" name="endereco" size="40">
                 </fieldset>
                 <fieldset>
                     <label for="numResidencia">Número </label>
@@ -94,8 +95,8 @@
                     <input type="text" id="bairro">
                 </fieldset>
                 <fieldset>
-                    <label>Cidade</label id="cidade">
-                    <input type="text">
+                    <label>Cidade</label>
+                    <input type="text" id="cidade">
                 </fieldset>
                 <fieldset>
                     <label for="complemento">Complemento</label>
