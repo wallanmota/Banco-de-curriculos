@@ -31,7 +31,7 @@
  
     <div id="secao-02" class="secao">
     <div id="containerPai">
-        <form id="container">
+        <form id="container" method="get" action=".">
 
             <h2>Preencha o formulário abaixo!</h2>
         
@@ -76,7 +76,7 @@
             <div class="bloco">
                 <fieldset>
                     <label>CEP *</label>
-                    <input id="cep" maxlength="8" type="number" required>
+                    <input id="cep" value="" size="10" maxlength="9" type="text" onBlur="pesquisacep(this.value)" required>
                 </fieldset>
                 <fieldset>
                     <label>Endereço</label>
