@@ -4,7 +4,7 @@
   "description": "pacote para backend projeto jobsnet",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
   },
   "keywords": [
     "busca"
@@ -16,5 +16,8 @@
     "mongodb": "^4.1.1",
     "mongoose": "^6.0.0",
     "swagger-ui-express": "^4.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
   }
 }
