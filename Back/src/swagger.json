@@ -1,0 +1,116 @@
+{
+  "openapi": "3.0.0",
+
+  "info": {
+    "title": "API Banco de currículos JobNet",
+    "description": "API criada para cadastrar dados de uma tabela no banco de dados",
+    "version": "0.0.1"
+  },
+
+  "servers": [
+    {
+      "url": "http://localhost:5000",
+      "description": "ambiente de desenvolvimento"
+    }
+  ],
+
+ 
+  "paths": {
+    "/register": {
+      "post": {
+        "summary": "Cadastro de candidato",
+        "description": "Rota de cadastro de usuário, recebe: nome, cargo, dataNascimento, estadoCivil, genero, cep, endereco, numero, bairro, cidade, complemento, fone, cel, emai, rg, cpf, veiculo, cnh",
+        "tags": ["candidato"],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "nome": {
+                    "type": "string"
+                  },
+                  "cargo": {
+                    "type": "string"
+                  },
+                  "dataNascimento": {
+                    "type": "string"
+                  },
+                  "estadoCivil": {
+                    "type": "string"
+                  },
+                  "genero": {
+                    "type": "string"
+                  },
+                  "cep": {
+                    "type": "number"
+                  },
+                  "endereco": {
+                    "type": "string"
+                  },
+                  "numero": {
+                    "type": "number"
+                  },
+                  "bairro": {
+                    "type": "string"
+                  },
+                  "cidade": {
+                    "type": "string"
+                  },
+                  "complemento": {
+                    "type": "string"
+                  },
+                  "fone": {
+                    "type": "string"
+                  },
+                  "cel": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string"
+                  },
+                  "rg": {
+                    "type": "string"
+                  },
+                  "cpf": {
+                    "type": "string"
+                  },
+                  "veiculo": {
+                    "type": "string"
+                  },
+                  "cnh": {
+                    "type": "string"
+                  }
+
+                }
+              },
+              "examples": {
+                "Candidato": {
+                  "value": {
+                    "nome": "João Silva",
+                    "cargo": "Dev",
+                    "dataNascimento": "10/10/1980",
+                    "estadoCivil": "Solteiro(a)",
+                    "genero": "outro",
+                    "cep": "01001000",
+                    "endereco": "praca da sé",
+                    "numero": "10",
+                    "bairro": "centro",
+                    "cidade": "São Paulo",
+                    "complemento": " ",
+                    "fone": "11 11111111",
+                    "cel": "11 999999999",
+                    "email": "joao@email.com",
+                    "rg": "000000000",
+                    "cpf": "11111111111",
+                    "veiculo": "não",
+                    "cnh": "b"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -2,7 +2,7 @@ const candidate = require('../models/candidate');
 
 module.exports = {
     async register(req, res){
-        const { nome, cargo, dataNascimento, estadoCivil, genero, cep, endereco, numero, bairro, cidade, complemento, fone, cel, emai, rg, cpf, veiculo, cnh } = req.body
+        const { nome, cargo, dataNascimento, estadoCivil, genero, cep, endereco, numero, bairro, cidade, complemento, fone, cel, email, rg, cpf, veiculo, cnh } = req.body
 
         const newCandidate = new candidate();
 
@@ -19,7 +19,7 @@ module.exports = {
         newCandidate.complemento = complemento;
         newCandidate.fone = fone;
         newCandidate.cel = cel;
-        newCandidate.emai = emai;
+        newCandidate.email = email;
         newCandidate.rg = rg;
         newCandidate.cpf = cpf;
         newCandidate.veiculo = veiculo;
@@ -28,7 +28,7 @@ module.exports = {
         newCandidate.save((err, savedCandidate) => {
             if(err){
                 console.log(err);
-                return res.statu(500).send();
+                return res.status(500).send('Deu ruim');
             }
             else{
                 return res.statu(200).send(savedCandidate);

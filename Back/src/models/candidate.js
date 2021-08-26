@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const { string } = require('prop-types');
+// const { string } = require('prop-types');
 
 const CandidateSchema = new mongoose.Schema({
     nome: { type: String, unique: false, required: true },
