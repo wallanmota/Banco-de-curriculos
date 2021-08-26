@@ -150,3 +150,43 @@ else {
     limpa_formulário_cep();
 }
 };
+
+//////////////////////////////////////////////
+// Conexão API com front
+
+async function getContent(){
+    try{
+        const response = await fetch('http://localhost:5000');
+        console.log(response)
+        
+    }
+    catch(error){
+        console.log("errouuuuu")
+    }
+}
+getContent();
+
+document.forms['formulario'].addEventListener('enviar', (event) => {
+    event.preventDefault();
+    const button = document.getElementById('enviar');
+    // const i = document.querySelector('i');
+
+    
+    fetch(event.target.action, {
+        method: 'POST',
+        body: new URLSearchParams(new FormData(event.target)) // event.target é o form
+    }).then((resp) => {
+        if (resp.redirected) {
+            window.location.href = resp.url;
+        }
+        return resp.json();
+    }).then((body) => {
+        if (body.error == 1) {
+            alert("Esse CPF já está cadastrado!")
+        } 
+    }).catch((error) => {
+        // TODO handle error
+    });
+    
+});
+

@@ -126,7 +126,7 @@
         height: 90vh;
     }
 
-    #container {
+    #formulario {
         display: flex;
         align-items: center; 
         flex-direction: column;
@@ -160,7 +160,7 @@
         width: 5rem;
     }
     
-    #container button {
+    #formulario button {
         width: 10rem;
         padding: 5px;
         margin: 20px auto;
@@ -168,11 +168,11 @@
         color: #fff;
     }
     
-    #container button:hover{
+    #formulario button:hover{
         color: #111;
     }
 
-    #container button:active{
+    #formulario button:active{
         color: #fff;
         background: #252217;
     }
@@ -206,7 +206,7 @@
     @media only screen and (max-width: 480px) {
     
 
-        #container {
+        #formulario {
             align-items: center;
         }
     
