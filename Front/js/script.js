@@ -154,23 +154,14 @@ else {
 //////////////////////////////////////////////
 // Conexão API com front
 
-async function getContent(){
-    try{
-        const response = await fetch('http://localhost:5000');
-        console.log(response)
-        
-    }
-    catch(error){
-        console.log("errouuuuu")
-    }
-}
-getContent();
-
-document.forms['formulario'].addEventListener('enviar', (event) => {
+document.forms['cv_form'].addEventListener('submit', (event) => {
     event.preventDefault();
-    const button = document.getElementById('enviar');
-    // const i = document.querySelector('i');
-
+    const button = document.getElementById('submit-btn');
+    const i = document.querySelector('i');
+    button.classList.add('buttonload');
+    i.classList.add('fa');
+    i.classList.add('fa-circle-o-notch');
+    i.classList.add('fa-spin');
     
     fetch(event.target.action, {
         method: 'POST',
@@ -187,6 +178,10 @@ document.forms['formulario'].addEventListener('enviar', (event) => {
     }).catch((error) => {
         // TODO handle error
     });
-    
+    button.classList.remove('buttonload');
+    i.classList.remove('fa');
+    i.classList.remove('fa-circle-o-notch');
+    i.classList.remove('fa-spin');
 });
+
 
