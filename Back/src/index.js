@@ -53,17 +53,17 @@ app.post('/add', async function (req, res) {
             genero: req.body.genero,
             cep: req.body.cep,
             endereco: req.body.endereco,
-            numero: req.body.numero,
+            numResidencia: req.body.numResidencia,
             bairro: req.body.bairro,
             cidade: req.body.cidade,
             complemento: req.body.complemento,
-            fone: req.body.fone,
+            telefone: req.body.telefone,
             celular: req.body.celular,
             email: req.body.email,
-            rg: req.body.rg,
-            cpf: req.body.cpf,
+            identidade: req.body.identidade,
+            cpf_digitado: req.body.cpf_digitado,
             veiculo: req.body.veiculo,
-            cnh: req.body.cnh
+            categoriaHabilitacao: req.body.categoriaHabilitacao
         }).then(() => {
             res.redirect(301, "/submitted.html")
         }).catch((erro) => {

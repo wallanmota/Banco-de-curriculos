@@ -23,7 +23,7 @@ const UserSchema = db.mongoose.Schema({
     endereco:  {
         type: String
     },
-    numero:  {
+    numResidencia:  {
         type: String
     },
     bairro: {
@@ -35,19 +35,19 @@ const UserSchema = db.mongoose.Schema({
     estcomplemento:  {
         type: String
     },
-    fone:  {
+    telefone:  {
         type: String,
     },
-    cel: {
+    celular: {
         type: String
     },
     email: {
         type: String
     },
-    rg:  {
+    identidade:  {
         type: String
     },
-    cpf: {
+    cpf_digitado: {
         type: String,
         unique: true,
         require: true,
@@ -56,7 +56,7 @@ const UserSchema = db.mongoose.Schema({
         type: String
         
     },
-    cnh: {
+    categoriaHabilitacao: {
         type: String
     }
     
