@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Lucinda Grande", "Lucinda Sans Unicode", Arial, sans-serif;
+    background: #cdc8b1;
+  }
+
+header {
+    background: #252217;
+    height: auto;
+    width: 100%;
+    
+}
+/* ::-webkit-scrollbar{
+    display: none;
+} */
+
+.inicio{
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px 0px;
+    text-align: center;
+    
+} 
+
+h1{
+    color: #fff;
+    font-size: 5em;
+    margin: 30px 0;
+    
+}
+
+span{
+    color: #af670a;
+}
+
+#imagem{
+    width: 50%;
+    margin: 0 auto;
+    
+}
+
+img.img-emprego{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+p.textoHome{
+    color: #fff;
+    font-size: 1.5em;
+    padding: 30px 10px;
+
+}
+
+
+h2{
+    color: #af670a;
+    margin-top: 50px;
+}
+
+.formulario{
+    width: 100%;
+}
+
+#cadastroform{
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 5px;
+    
+    
+}
+
+label{
+    display: block;
+}
+
+fieldset {
+    border: none;
+}
+
+
+button {
+    width: 10rem;
+    padding: 5px;
+    margin: 20px auto;
+    background: #af670a;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+button:hover{
+    color: #111;
+}
+
+button:active{
+    color: #fff;
+    background: #252217;
+}
+
+#container_enviado{
+    background: #252217;
+    width: 100%;
+    text-align: center;
+}
+#container_enviado a{
+    color: #af670a;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+#container_enviado a:hover{
+    color:#fff;
+    text-decoration: underline;
+}
+
+#name, #rua, #email, #cargo {
+    width: 18.75rem;
+}
+
+#cep{
+    width: 7.5rem;
+}
+
+
+
+
+
+
+@media (max-width: 768px){
+
+    h1{
+        font-size: 3em;
+    }
+
+    header {
+        justify-content: center;
+        margin-bottom:40px;
+    }
+
+    .logo {
+        margin-right: 4em;
+    }
+    
+    ul {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+        margin-left: 4em;
+    }
+
+    img {
+        display: none;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .container {
+        height: 100%;
+        margin: 0 20px;
+        gap: 4em;
+    }
+
+    .title-decoration {
+        width: 50px;
+    }
+
+    .intro-texto {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    
+    form {
+        width: 85%;
+        margin-top: 25px;
+    }
+
+    input,
+    select,
+    textarea,
+    option {
+        margin-bottom: 30px;
+    }
+
+    .form-row{
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    fieldset, form h2, .habilitacao {
+        margin: 0;
+    }
+
+    .cep input, .rua input, .carro, .estado,
+    .numero input  {
+        width: 100%;
+    }
+
+    form h2, .habilitacao  {
+        margin-bottom: 25px;
+    }
+
+    button {
+        width: 30%;
+    }
+
+}
+

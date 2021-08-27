@@ -1,37 +1,43 @@
-    ////////////////////////////////////////////////////////////
-    // Rolagem da página
-    let alturaDocumento = $(window).height(); //pega altura da janela
-
-    function AlturaSecao() {
-      $('.secao').height(alturaDocumento); //atribui o valor da variável a todas as divs com a classe secao
-    }
-
-    function ScrollSecao() {
-    //   console.log('entrou');
-      let body = $('html, body');
-      if($(this).parent('.secao').is('#secao-01')) {
-        //verifica se está na primeira seção e rola para a segunda
-        body.animate({scrollTop: alturaDocumento},'500');
-      } else {
-        //rola para o início da página
-        body.animate({scrollTop: 0}, '800');
-      }
-    }
-
-    $('.icone-scroll').click(ScrollSecao); //chama a função na ação de click no ícone
-
-    $(AlturaSecao); //chama a nossa função só depois que o documento estiver completamente carregado
+document.forms['cadastroform'].addEventListener('submit', (event) => {
+    event.preventDefault();
+    const button = document.getElementById('enviar');
+    const i = document.querySelector('i');
+    button.classList.add('buttonload');
+    i.classList.add('fa');
+    i.classList.add('fa-circle-o-notch');
+    i.classList.add('fa-spin');
     
+    fetch(event.target.action, {
+        method: 'POST',
+        body: new URLSearchParams(new FormData(event.target)) // event.target é o form
+    }).then((resp) => {
+        if (resp.redirected) {
+            window.location.href = resp.url;
+        }
+        return resp.json();
+    }).then((body) => {
+        if (body.error == 1) {
+            alert("Esse CPF já está cadastrado!")
+        } 
+    }).catch((error) => {
+        // TODO handle error
+    });
+    button.classList.remove('buttonload');
+    i.classList.remove('fa');
+    i.classList.remove('fa-circle-o-notch');
+    i.classList.remove('fa-spin');
+});
+
 ////////////////////////////////////////////////////////////
 // Validação CPF - Front
-function validaCPF(cpf){
-    if(cpf.length != 11){
+function validaCPF(cpf1){
+    if(cpf1.length != 11){
         return false;
     }
     else{
 
-        let numeros =  cpf.substring(0, 9);
-        let digitos = cpf.substring(9);
+        let numeros =  cpf1.substring(0, 9);
+        let digitos = cpf1.substring(9);
 
         let soma = 0;
         for (var i = 0; i < 10; i++){
@@ -49,7 +55,7 @@ function validaCPF(cpf){
         }
 
         soma = 0;
-        numeros = cpf.substring(0, 10);
+        numeros = cpf1.substring(0, 10);
 
         for(var k = 0; k < 11; k++){
             soma += numeros.charAt(0 + k) * k;
@@ -72,25 +78,26 @@ function validaCPF(cpf){
 function validacao(){
     console.log("iniciando validação")
 
-    let cpf = document.getElementById("cpf_digitado").value;
-    let resultadoValidacao = validaCPF(cpf);
+    let cpf1 = document.getElementById("cpf").value;
+    let resultadoValidacao = validaCPF(cpf1);
 
     if (resultadoValidacao){
         console.log('cpf OK');
     }
     else{
         alert('CPF Inválido')
-        document.getElementById('cpf_digitado').value=("");
+        document.getElementById('cpf').value=("");
     }
 }
 
-//////////////////////////////////////////////
-// Validação CEP
 
+
+////////////////////////////////////////////////////////////
+// Validação do CEP
 function limpa_formulário_cep() {
     //Limpa valores do formulário de cep.
     document.getElementById('cep').value=("");
-    document.getElementById('endereco').value=("");
+    document.getElementById('rua').value=("");
     document.getElementById('bairro').value=("");
     document.getElementById('cidade').value=("");
 }
@@ -98,7 +105,7 @@ function limpa_formulário_cep() {
 function meu_callback(conteudo) {
 if (!("erro" in conteudo)) {
     //Atualiza os campos com os valores.
-    document.getElementById('endereco').value=(conteudo.logradouro);
+    document.getElementById('rua').value=(conteudo.logradouro);
     document.getElementById('bairro').value=(conteudo.bairro);
     document.getElementById('cidade').value=(conteudo.localidade);
 } //end if.
@@ -124,7 +131,7 @@ if (cep != "") {
     if(validacep.test(cep)) {
 
         //Preenche os campos com "..." enquanto consulta webservice.
-        document.getElementById('endereco').value="...";
+        document.getElementById('rua').value="...";
         document.getElementById('bairro').value="...";
         document.getElementById('cidade').value="...";
         
@@ -150,8 +157,3 @@ else {
     limpa_formulário_cep();
 }
 };
-
-//////////////////////////////////////////////
-// Conexão API com front
-
-
