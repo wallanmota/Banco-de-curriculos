@@ -1,0 +1,226 @@
+     * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body{
+        font-family: "Lucinda Grande", "Lucinda Sans Unicode", Arial, sans-serif;
+    }
+
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
+    h1{
+        color: #fff;
+        font-size: 1.75em;
+    }
+
+    h2{
+        color: #af670a;
+        margin-top: 50px;
+    }
+
+    p{
+        color: #fff;
+    }
+
+    span{
+        color: #af670a;
+    }
+
+    p.textoHome{
+        color: #fff;
+        font-size: 1.5em;
+        padding: 30px 10px;
+    }
+
+    .container{
+        width: 80vw;
+        height: 85vh;
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+
+    #logo{
+        font-size: 3em;
+        padding: 50px 10px;
+        
+    }
+
+    #imagem{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    img.img-emprego{
+        width: 100%;
+        max-width: 400px;
+        border-radius: 20px;
+    }
+
+    .secao {
+      position: relative;
+    }
+    #secao-01 {
+      background: #252217;
+    }
+    #secao-02 {
+      background-color: #cdc8b1;
+    }
+
+    .icone-scroll {
+      position: absolute;
+      bottom: 1em;
+      width: 50px;
+      height: 50px;
+      background-color: #1a1a1a;
+      border-radius: 50%;
+      left: 50%;
+      margin-left: -25px;
+      cursor: pointer;
+    }
+    .scroll {
+      width: 15px;
+      height: 15px;
+      border-right: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      display: inline-block;
+      position: relative;
+    }
+    .scroll-next {
+      transform: rotate(45deg);
+      margin: 14px 0 0 16.5px;
+    }
+    .scroll-top {
+      transform: rotate(225deg);
+      margin: 19px 0 0 17px;
+    }
+    .scroll-top + .scroll-top {
+      top: -15px;
+      margin-top: 0;
+    }
+    
+    /* Pagina 2 - Form
+    ******************************/
+
+    form{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    fieldset{
+        border: none;
+    }
+        
+    label{
+        display: block;
+    }
+    
+    #containerPai{
+        width: 100vw;
+        height: 90vh;
+    }
+
+    #formulario {
+        display: flex;
+        align-items: center; 
+        flex-direction: column;
+    }
+    
+    .bloco {
+    width: 60vw;
+    display: flex;
+    margin: 5px;
+    justify-content:space-between
+    }
+
+    #erro{
+        color: red;
+    }
+    
+    #cep, #telefone, #celular,
+    #identidade, #cpf{
+        width: 7.5rem;    
+    }
+    
+    #nome, #endereco, #email {
+    width: 18.75rem;
+    }
+    
+    #categoriasHabilitacao{
+        width: 6em;
+    }
+    
+    #numResidencia {
+        width: 5rem;
+    }
+    
+    #formulario button {
+        width: 10rem;
+        padding: 5px;
+        margin: 20px auto;
+        background: #af670a;
+        color: #fff;
+    }
+    
+    #formulario button:hover{
+        color: #111;
+    }
+
+    #formulario button:active{
+        color: #fff;
+        background: #252217;
+    }
+    
+
+
+    @media only screen and (max-width: 820px) {
+        
+       .bloco {
+            width: 90%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+        }
+
+        .icone-scroll{
+            display: none;
+        } 
+
+        .scroll-top{
+            display: none;
+        } 
+
+
+        .scroll{
+            display: none;
+        }
+    
+    }
+    
+    @media only screen and (max-width: 480px) {
+    
+
+        #formulario {
+            align-items: center;
+        }
+    
+        .container h1 {
+            font-size: 1em;
+            
+        }
+
+        h2{
+            padding: 0;
+            margin: 0;
+        }
+        .bloco {
+            width: 95%;
+            flex-wrap: wrap;
+        }
+    }
