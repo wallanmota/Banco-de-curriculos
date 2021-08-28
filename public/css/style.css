@@ -14,9 +14,6 @@ header {
     width: 100%;
     
 }
-/* ::-webkit-scrollbar{
-    display: none;
-} */
 
 .inicio{
     width: 70%;
@@ -58,6 +55,7 @@ p.textoHome{
 
 
 h2{
+    text-align: center;
     color: #af670a;
     margin-top: 50px;
 }
@@ -100,7 +98,7 @@ fieldset {
 
 
 button {
-    width: 10rem;
+    width: 10em;
     padding: 5px;
     margin: 20px auto;
     background: #af670a;
@@ -179,6 +177,7 @@ button:active{
 
     button {
         width: 30%;
+        margin: 20px auto;
     }
 
 }
