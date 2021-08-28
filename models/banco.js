@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
 
+const mongoURL = 'mongodb+srv://user-01:jhDdMqBfZzNhrmWx@cluster0.g2ws4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb+srv://user-01:jhDdMqBfZzNhrmWx@cluster0.g2ws4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
+mongoose.connect( mongoURL, {
     useNewUrlParser: true 
 }).then(()=>{
     console.log("BD Conectado")
