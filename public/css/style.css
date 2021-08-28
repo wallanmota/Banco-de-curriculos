@@ -85,9 +85,9 @@ form {
     display: flex;
     justify-content: space-between;
     width: 80%;
+    max-width: 700px;
     margin: 5px;
-    
-    
+       
 }
 
 label{
@@ -141,85 +141,40 @@ button:active{
 }
 
 
-
-
-
-
+/* Responsividade */
 @media (max-width: 768px){
 
     h1{
         font-size: 3em;
     }
+    h2{
+        text-align: center;
+    }
 
     header {
         justify-content: center;
-        margin-bottom:40px;
-    }
-
-    .logo {
-        margin-right: 4em;
-    }
-    
-    ul {
-        display: none;
-    }
-
-    .burger-menu {
-        display: block;
-        margin-left: 4em;
     }
 
     img {
         display: none;
     }
-
-    .title {
-        font-size: 26px;
-    }
-
-    .container {
-        height: 100%;
-        margin: 0 20px;
-        gap: 4em;
-    }
-
-    .title-decoration {
-        width: 50px;
-    }
-
-    .intro-texto {
-        font-size: 18px;
-        margin-bottom: 40px;
-    }
     
     form {
         width: 85%;
-        margin-top: 25px;
-    }
-
-    input,
-    select,
-    textarea,
-    option {
-        margin-bottom: 30px;
     }
 
     .form-row{
         flex-wrap: wrap;
-        margin: 0;
+        margin: 5px;
+        width: 95%;
     }
 
-    fieldset, form h2, .habilitacao {
-        margin: 0;
+    p.textoHome{
+        font-size: 1.1em;
     }
 
-    .cep input, .rua input, .carro, .estado,
-    .numero input  {
-        width: 100%;
-    }
-
-    form h2, .habilitacao  {
-        margin-bottom: 25px;
+    input{
+        margin-bottom: 5px;
     }
 
     button {
