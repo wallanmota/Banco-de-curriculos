@@ -2,7 +2,7 @@
   "name": "back-jobsnet",
   "version": "1.0.0",
   "description": "pacote para backend projeto jobsnet",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.js"
   },
