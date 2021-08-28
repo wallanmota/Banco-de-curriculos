@@ -4,6 +4,13 @@ const swaggerUI = require('swagger-ui-express');
 const swaggerDocs = require('./swagger.json');
 const cors = require('cors');
 const User = require('./models/User');
+
+
+const serverless = require('serverless-http');
+const router = express.Router();
+
+router.get('/');
+
 const {
     Op
 } = require("sequelize");
@@ -59,3 +66,7 @@ const PORT = process.env.PORT || 5000
 app.listen(PORT, () => {
     console.log(`Servidor rodando na url http://localhost:5000`)
 });
+
+app.use('/.netlify/functions/api', router)
+module.exports= app;
+module.exports.handler = serverless(app);
