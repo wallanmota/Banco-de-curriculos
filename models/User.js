@@ -49,15 +49,16 @@ const UserSchema = db.mongoose.Schema({
     },
     cpf:  {
         type: String,
-        require: true
+        require: true,
+        unique: true
     },
     habilitacao: {
         type: String
     },
     carro:  {
         type: String
-    }
-}) 
+    },
+}); 
 
 const User = db.mongoose.model('usuarios', UserSchema)
 

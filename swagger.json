@@ -16,7 +16,7 @@
 
  
   "paths": {
-    "/register": {
+    "/add": {
       "post": {
         "summary": "Cadastro de candidato",
         "description": "Rota de cadastro de usuário, recebe: nome, cargo, dataNascimento, estadoCivil, genero, cep, endereco, numero, bairro, cidade, complemento, fone, cel, emai, rg, cpf, veiculo, cnh",
@@ -32,19 +32,19 @@
                   "cargo": {
                     "type": "string"
                   },
-                  "dataNascimento": {
+                  "dataNasc": {
                     "type": "string"
                   },
                   "estadoCivil": {
                     "type": "string"
                   },
-                  "genero": {
+                  "sexo": {
                     "type": "string"
                   },
                   "cep": {
                     "type": "number"
                   },
-                  "endereco": {
+                  "rua": {
                     "type": "string"
                   },
                   "numero": {
@@ -59,25 +59,25 @@
                   "complemento": {
                     "type": "string"
                   },
-                  "fone": {
-                    "type": "string"
-                  },
-                  "cel": {
-                    "type": "string"
-                  },
                   "email": {
                     "type": "string"
                   },
-                  "rg": {
+                  "celular": {
+                    "type": "string"
+                  },
+                  "tel1": {
+                    "type": "string"
+                  },
+                  "identidade": {
                     "type": "string"
                   },
                   "cpf": {
                     "type": "string"
                   },
-                  "veiculo": {
+                  "habilitacao": {
                     "type": "string"
                   },
-                  "cnh": {
+                  "carro": {
                     "type": "string"
                   }
 
@@ -88,22 +88,22 @@
                   "value": {
                     "nome": "João Silva",
                     "cargo": "Dev",
-                    "dataNascimento": "10/10/1980",
+                    "dataNasc": "10/10/1980",
                     "estadoCivil": "Solteiro(a)",
-                    "genero": "outro",
+                    "sexo": "outro",
                     "cep": "01001000",
-                    "endereco": "praca da sé",
+                    "rua": "praca da sé",
                     "numero": "10",
                     "bairro": "centro",
                     "cidade": "São Paulo",
                     "complemento": " ",
-                    "fone": "11 11111111",
-                    "cel": "11 999999999",
-                    "email": "joao@email.com",
-                    "rg": "000000000",
+                    "email": "11 11111111",
+                    "celular": "11 999999999",
+                    "tel1": "joao@email.com",
+                    "identidade": "000000000",
                     "cpf": "11111111111",
-                    "veiculo": "não",
-                    "cnh": "b"
+                    "habilitacao": "B",
+                    "carro": "sim"
                   }
                 }
               }
