@@ -11,6 +11,10 @@
     {
       "url": "http://localhost:5000",
       "description": "ambiente de desenvolvimento"
+    },
+    {
+      "url": "https://cadastro-jobsnet.herokuapp.com/",
+      "description": "ambiente de produção"
     }
   ],
 
