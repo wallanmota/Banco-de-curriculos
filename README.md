@@ -1,6 +1,10 @@
 # Desafio #1: Banco de Currículos / Gama Academy
 
-## Desafio:
+Para ver o projeto finalizado [**Clique Aqui!**](https://cadastro-jobsnet.herokuapp.com)
+
+Documentação API dos recursos Web Services REST - Uso do Swagger [**Aqui!**](https://cadastro-jobsnet.herokuapp.com/docs)
+
+## Desafio Proposto:
 Desenvolver uma página para a empresa JobsNET para atração de profissionais para conectar as oportunidades de emprego.
 
 ### Frontend
