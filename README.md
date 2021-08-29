@@ -1,8 +1,10 @@
-# Desafio #1: Banco de Currículos / Gama Academy
+# Banco de Currículos JobsNET
 
 Para ver o projeto finalizado [**Clique Aqui!**](https://cadastro-jobsnet.herokuapp.com)
 
 Documentação API dos recursos Web Services REST - Uso do Swagger [**Aqui!**](https://cadastro-jobsnet.herokuapp.com/docs)
+
+***Projeto de conclusão de curso de desenvolvimento Full Stack da Gama Academy + Ambev Tech***
 
 ## Desafio Proposto:
 Desenvolver uma página para a empresa JobsNET para atração de profissionais para conectar as oportunidades de emprego.
@@ -14,7 +16,7 @@ Desenvolver uma página para a empresa JobsNET para atração de profissionais p
 - Apresentar a estrutura do projeto no github;
 - Landing page com formulário para preenchimento de candidatura;
 - Não existe uma regra para o layout da página;
-- Hospedar página no Netlify;
+- Hospedar página;
 
 ### Backend
 
@@ -32,3 +34,21 @@ Desenvolver uma página para a empresa JobsNET para atração de profissionais p
 
 - Disponibilizar uma API Rest com a funcionalidade de cadastro de candidatos armazenando em um banco de dados;
 - Disponibilizar a documentação dos recursos Web Services REST - Uso do Swagger.
+
+##
+
+### Como rodar o projeto localmente?
+
+* Fazer o fork
+* Fazer o clone para pasta de preferência 
+
+Para rodar o projeto é preciso ter o node instalado, e instalar as dependências abaixo:
+
+```
+Express
+Swagger-ui-express
+Cors 
+Sequelize
+Mongoose
+```
+Com as dependências instaladas basta rodar em localhost e acessar através da porta 5000
